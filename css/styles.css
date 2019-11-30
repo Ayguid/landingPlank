@@ -361,7 +361,7 @@ section h1{
   border: none;
   margin: 0;
   padding: 0;
-  opacity: 0.8;
+  /* opacity: 0.8; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -380,7 +380,7 @@ section h1{
  bottom:0;
  left:0;
  opacity: 0.2;
-  background-image: url("../img/pngguru.png");
+  background-image: url("../img/pngguru-low.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
@@ -416,6 +416,12 @@ text-transform: uppercase;
 
 #projects  {
   min-height: 100vh;
+}
+
+#services{
+  min-height: 100vh;
+  background-color: var(--main-blue);
+  position: relative;
 }
 .project  {
   float: left;
@@ -536,6 +542,16 @@ text-transform: uppercase;
    background-position: center center;
    z-index: 1;
 }
+.large-header {
+    cursor: pointer;
+   position: relative;
+   width: 100%;
+   background: rgba(17, 17, 17, 0.67);
+   overflow: hidden;
+   background-size: cover;
+   background-position: center center;
+   z-index: 1;
+}
 
 .demo .large-header {
    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
@@ -561,6 +577,17 @@ text-transform: uppercase;
 
 .main-title .thin {
    font-weight: 200;
+}
+
+a.sub-title {
+   top: 62%;
+   font-weight: lighter !important;
+   /* font-family: motorWay; */
+   font-size: 14px;
+   letter-spacing: 8px;
+   color: #FFFFFF;
+   height: 10px;
+   z-index: 100;
 }
 
 @media only screen and (max-width: 768px) {
